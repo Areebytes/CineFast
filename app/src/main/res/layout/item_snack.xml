@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#333333"
+    android:padding="8dp"
+    android:layout_marginBottom="10dp">
+
+    <ImageView
+        android:id="@+id/imgSnack"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        android:contentDescription="Snack" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="12dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/txtSnackName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtSnackPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightRed"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnSnackMinus"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="-"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:padding="0dp" />
+
+        <TextView
+            android:id="@+id/txtSnackQty"
+            android:layout_width="36dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/btnSnackPlus"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:text="+"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:padding="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
