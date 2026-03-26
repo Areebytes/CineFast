@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtSelectedMovie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Movie Name"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Screen X"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="8"
+        android:rowCount="5"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="true"
+        android:padding="8dp">
+
+        <Button android:id="@+id/seat_00" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_01" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_02" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_03" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_04" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_05" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_06" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_07" style="@style/SeatButton" />
+
+        <Button android:id="@+id/seat_10" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_11" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_12" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_13" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_14" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_15" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_16" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_17" style="@style/SeatButton" />
+
+        <Button android:id="@+id/seat_20" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_21" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_22" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_23" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_24" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_25" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_26" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_27" style="@style/SeatButton" />
+
+        <Button android:id="@+id/seat_30" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_31" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_32" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_33" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_34" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_35" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_36" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_37" style="@style/SeatButton" />
+
+        <Button android:id="@+id/seat_40" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_41" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_42" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_43" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_44" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_45" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_46" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_47" style="@style/SeatButton" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginVertical="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="24dp">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/red"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booked"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginEnd="24dp">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@color/yellow"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yours"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="#333333"
+                android:layout_marginEnd="8dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Available"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnBookSeats"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Book Seats"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/lightRed"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnProceedSnacks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Proceed to Snacks"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/lightRed"
+            android:enabled="false" />
+    </LinearLayout>
+</LinearLayout>
