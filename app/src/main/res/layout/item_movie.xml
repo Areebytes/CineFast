@@ -14,7 +14,7 @@
         android:layout_width="80dp"
         android:layout_height="100dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/logo"
+        android:src="@drawable/movie"
         android:contentDescription="Poster" />
 
     <LinearLayout
