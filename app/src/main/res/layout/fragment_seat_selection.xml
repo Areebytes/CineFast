@@ -215,23 +215,49 @@
         android:gravity="center"
         android:layout_marginBottom="12dp">
 
-        <View android:layout_width="12dp" android:layout_height="12dp"
-            android:background="@color/red" android:layout_marginEnd="4dp"/>
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Booked" android:textColor="#888888" android:textSize="12sp"
+        <View
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@color/red"
+            android:layout_marginEnd="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booked"
+            android:textColor="#888888"
+            android:textSize="12sp"
             android:layout_marginEnd="16dp"/>
-        <View android:layout_width="12dp" android:layout_height="12dp"
-            android:background="@color/green" android:layout_marginEnd="4dp"/>
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Yours" android:textColor="#888888" android:textSize="12sp"
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@color/green"
+            android:layout_marginEnd="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yours" android:textColor="#888888"
+            android:textSize="12sp"
             android:layout_marginEnd="16dp"/>
-        <View android:layout_width="12dp" android:layout_height="12dp"
-            android:background="#555555" android:layout_marginEnd="4dp"/>
-        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-            android:text="Available" android:textColor="#888888" android:textSize="12sp"/>
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="#555555"
+            android:layout_marginEnd="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available"
+            android:textColor="#888888"
+            android:textSize="12sp"/>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layoutNowShowingButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -262,6 +288,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/layoutComingSoonButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"

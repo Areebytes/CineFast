@@ -41,6 +41,9 @@ public class SnacksAdapter extends ArrayAdapter<Snacks> {
         txtPrice.setText(String.format("$%.2f", snack.getPrice()));
         txtQty.setText(String.valueOf(snack.getQuantity()));
 
+        TextView txtDesc = convertView.findViewById(R.id.txtSnackDesc);
+        txtDesc.setText(snack.getDescription());
+
         btnPlus.setOnClickListener(v -> {
             snack.setQuantity(snack.getQuantity() + 1);
             txtQty.setText(String.valueOf(snack.getQuantity()));
