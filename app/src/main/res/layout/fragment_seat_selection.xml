@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D0D0D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1A1A1A"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtSelectedMovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+13"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:background="@color/green"
+                android:padding="4dp"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EN"
+                android:textColor="@color/white"
+                android:textSize="11sp"
+                android:background="#333333"
+                android:padding="4dp"
+                android:layout_marginEnd="6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ScreenX"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Theater"
+                    android:textColor="#888888"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stars (90°Mall)"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hall"
+                    android:textColor="#888888"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1st"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textColor="#888888"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13.04.2025"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Time"
+                    android:textColor="#888888"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="22:15"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:columnCount="8"
+        android:rowCount="5"
+        android:padding="16dp">
+
+        <Button android:id="@+id/seat_00" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_01" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_02" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_03" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_04" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_05" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_06" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_07" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_10" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_11" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_12" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_13" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_14" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_15" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_16" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_17" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_20" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_21" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_22" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_23" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_24" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_25" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_26" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_27" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_30" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_31" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_32" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_33" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_34" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_35" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_36" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_37" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_40" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_41" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_42" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_43" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_44" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_45" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_46" style="@style/SeatButton" />
+        <Button android:id="@+id/seat_47" style="@style/SeatButton" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <View android:layout_width="12dp" android:layout_height="12dp"
+            android:background="@color/red" android:layout_marginEnd="4dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Booked" android:textColor="#888888" android:textSize="12sp"
+            android:layout_marginEnd="16dp"/>
+        <View android:layout_width="12dp" android:layout_height="12dp"
+            android:background="@color/green" android:layout_marginEnd="4dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Yours" android:textColor="#888888" android:textSize="12sp"
+            android:layout_marginEnd="16dp"/>
+        <View android:layout_width="12dp" android:layout_height="12dp"
+            android:background="#555555" android:layout_marginEnd="4dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Available" android:textColor="#888888" android:textSize="12sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnBookSeats"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="Book Seats"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:backgroundTint="@color/lightRed"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnProceedSnacks"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="Proceed to Snacks"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:backgroundTint="#333333"
+            android:enabled="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btnComingSoon"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="Coming Soon"
+            android:textColor="@color/white"
+            android:backgroundTint="#555555"
+            android:enabled="false"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnWatchTrailer"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="Watch Trailer"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/lightRed" />
+
+    </LinearLayout>
+
+</LinearLayout>

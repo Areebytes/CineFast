@@ -2,9 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="lightRed">#FF474C</color>
+    <color name="lightRed">#E53935</color>
     <color name="green">#4CAF50</color>
     <color name="yellow">#FFC107</color>
     <color name="red">#F44336</color>
-
+    <color name="darkBg">#0D0D0D</color>
+    <color name="cardBg">#1A1A2E</color>
 </resources>
