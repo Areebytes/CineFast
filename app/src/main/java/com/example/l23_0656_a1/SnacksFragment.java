@@ -29,11 +29,11 @@ public class SnacksFragment extends Fragment {
         int ticketPrice = getArguments().getInt("TICKET_PRICE", 0);
 
         ArrayList<Snacks> snackList = new ArrayList<>();
-        snackList.add(new Snacks("Popcorn", "Large / Buttered", 8.99, R.drawable.logo));
-        snackList.add(new Snacks("Nachos", "With Cheese Dip", 7.99, R.drawable.logo));
-        snackList.add(new Snacks("Soft Drink", "Large / Any Flavor", 5.99, R.drawable.logo));
-        snackList.add(new Snacks("Candy Mix", "Assorted Candies", 6.99, R.drawable.logo));
-        snackList.add(new Snacks("Hot Dog", "With Mustard & Ketchup", 9.99, R.drawable.logo));
+        snackList.add(new Snacks("Popcorn", "Large / Buttered", 8.99, R.drawable.snacks));
+        snackList.add(new Snacks("Nachos", "With Cheese Dip", 7.99, R.drawable.snacks));
+        snackList.add(new Snacks("Soft Drink", "Large / Any Flavor", 5.99, R.drawable.snacks));
+        snackList.add(new Snacks("Candy Mix", "Assorted Candies", 6.99, R.drawable.snacks));
+        snackList.add(new Snacks("Hot Dog", "With Mustard & Ketchup", 9.99, R.drawable.snacks));
 
         SnacksAdapter adapter = new SnacksAdapter(getContext(), snackList);
         ListView listView = view.findViewById(R.id.listViewSnacks);

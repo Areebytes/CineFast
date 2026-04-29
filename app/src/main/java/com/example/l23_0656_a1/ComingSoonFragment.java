@@ -26,11 +26,11 @@ public class ComingSoonFragment extends Fragment {
 
         ArrayList<Movie> movies = new ArrayList<>();
         movies.add(new Movie("Dune: Part Three", "Sci-Fi / TBD",
-                "https://www.youtube.com/watch?v=n9xhJrPXop4", R.drawable.logo, true));
+                "https://www.youtube.com/watch?v=n9xhJrPXop4", R.drawable.movie, true));
         movies.add(new Movie("Avatar 3", "Fantasy / TBD",
-                "https://www.youtube.com/watch?v=d9MyW72ELq0", R.drawable.logo, true));
+                "https://www.youtube.com/watch?v=d9MyW72ELq0", R.drawable.movie, true));
         movies.add(new Movie("Mission Impossible 8", "Action / TBD",
-                "https://www.youtube.com/watch?v=avz06PDqDbM", R.drawable.logo, true));
+                "https://www.youtube.com/watch?v=avz06PDqDbM", R.drawable.movie, true));
 
         RecyclerView recyclerView = view.findViewById(R.id.recyclerViewMovies);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));

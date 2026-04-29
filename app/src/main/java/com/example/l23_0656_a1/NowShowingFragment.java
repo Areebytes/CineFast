@@ -24,15 +24,16 @@ public class NowShowingFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+
         ArrayList<Movie> movies = new ArrayList<>();
         movies.add(new Movie("The Dark Knight", "Action / 152 min",
-                "https://www.youtube.com/watch?v=EXeTwQWrcwY", R.drawable.logo, false));
+                "https://www.youtube.com/watch?v=EXeTwQWrcwY", R.drawable.movie, false));
         movies.add(new Movie("Inception", "Sci-Fi / 148 min",
-                "https://www.youtube.com/watch?v=YoHD9XEInc0", R.drawable.logo, false));
+                "https://www.youtube.com/watch?v=YoHD9XEInc0", R.drawable.movie, false));
         movies.add(new Movie("Interstellar", "Sci-Fi / 169 min",
-                "https://www.youtube.com/watch?v=zSWdZVtXT7E", R.drawable.logo, false));
+                "https://www.youtube.com/watch?v=zSWdZVtXT7E", R.drawable.movie, false));
         movies.add(new Movie("The Shawshank Redemption", "Drama / 142 min",
-                "https://www.youtube.com/watch?v=6hB3S9bIaco", R.drawable.logo, false));
+                "https://www.youtube.com/watch?v=6hB3S9bIaco", R.drawable.movie, false));
 
         RecyclerView recyclerView = view.findViewById(R.id.recyclerViewMovies);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
