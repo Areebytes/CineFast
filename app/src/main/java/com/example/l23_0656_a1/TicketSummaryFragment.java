@@ -8,10 +8,20 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import java.util.ArrayList;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Locale;
+import java.util.Map;
 
 public class TicketSummaryFragment extends Fragment {
 
@@ -56,8 +66,8 @@ public class TicketSummaryFragment extends Fragment {
             snacksContainer.addView(tv);
         }
 
-        // Save to SharedPreferences
-        ((MainActivity) requireActivity()).saveBooking(movieName, seatCount, grandTotal);
+        // Save to firebase
+        saveBookingToFirebase(movieName, seatCount, grandTotal);
 
         Button btnSendTicket = view.findViewById(R.id.btnSendTicket);
         btnSendTicket.setOnClickListener(v -> {
@@ -70,5 +80,30 @@ public class TicketSummaryFragment extends Fragment {
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Your CineFAST Ticket");
             startActivity(Intent.createChooser(shareIntent, "Share via"));
         });
+    }
+
+    private void saveBookingToFirebase(String movieName, int seatCount, int totalPrice) {
+        FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        if (user == null) return;
+
+        String userId    = user.getUid();
+        DatabaseReference dbRef = FirebaseDatabase.getInstance().getReference();
+
+        String dateTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+                .format(new Date());
+
+        Map<String, Object> booking = new HashMap<>();
+        booking.put("movieName",  movieName);
+        booking.put("seats",      seatCount);
+        booking.put("totalPrice", totalPrice);
+        booking.put("dateTime",   dateTime);
+        booking.put("timestamp",  System.currentTimeMillis());
+
+        String bookingId = dbRef.child("bookings").child(userId).push().getKey();
+        dbRef.child("bookings").child(userId).child(bookingId).setValue(booking)
+                .addOnSuccessListener(a ->
+                        Toast.makeText(getContext(), "Booking saved!", Toast.LENGTH_SHORT).show())
+                .addOnFailureListener(e ->
+                        Toast.makeText(getContext(), "Failed to save booking", Toast.LENGTH_SHORT).show());
     }
 }
