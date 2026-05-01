@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screen2bg">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC000000" />
+
+    <ImageView
+        android:id="@+id/ivSignupLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/splashlogo"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivSignupLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Create Account"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSignupSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCreateAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Sign up to get started"
+        android:textColor="#AAAAAA"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/cardSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSignupSub"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/rounded_card"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter your name"
+            android:hintTextColor="#666666"
+            android:textColor="@color/white"
+            android:inputType="textPersonName"
+            android:background="@drawable/button_outline"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Enter your email"
+            android:hintTextColor="#666666"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/button_outline"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="#AAAAAA"
+            android:textSize="12sp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Minimum 8 characters"
+            android:hintTextColor="#666666"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:background="@drawable/button_outline"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/lightRed" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLoginLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardSignup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Already have an account? Login"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+</RelativeLayout>
