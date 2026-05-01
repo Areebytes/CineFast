@@ -1,0 +1,48 @@
+{
+  "now_showing": [
+    {
+      "name": "The Dark Knight",
+      "genre": "Action / 152 min",
+      "trailerUrl": "https://www.youtube.com/watch?v=EXeTwQWrcwY",
+      "isComingSoon": false
+    },
+    {
+      "name": "Inception",
+      "genre": "Sci-Fi / 148 min",
+      "trailerUrl": "https://www.youtube.com/watch?v=YoHD9XEInc0",
+      "isComingSoon": false
+    },
+    {
+      "name": "Interstellar",
+      "genre": "Sci-Fi / 169 min",
+      "trailerUrl": "https://www.youtube.com/watch?v=zSWdZVtXT7E",
+      "isComingSoon": false
+    },
+    {
+      "name": "The Shawshank Redemption",
+      "genre": "Drama / 142 min",
+      "trailerUrl": "https://www.youtube.com/watch?v=6hB3S9bIaco",
+      "isComingSoon": false
+    }
+  ],
+  "coming_soon": [
+    {
+      "name": "Dune: Part Three",
+      "genre": "Sci-Fi / TBA",
+      "trailerUrl": "https://www.youtube.com/watch?v=n9xhJrPXop4",
+      "isComingSoon": true
+    },
+    {
+      "name": "Avatar 3",
+      "genre": "Action / TBA",
+      "trailerUrl": "https://www.youtube.com/watch?v=d9MyW72ELq0",
+      "isComingSoon": true
+    },
+    {
+      "name": "Mission Impossible 8",
+      "genre": "Action / TBA",
+      "trailerUrl": "https://www.youtube.com/watch?v=avz06PDqDbM",
+      "isComingSoon": true
+    }
+  ]
+}
