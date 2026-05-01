@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import java.util.ArrayList;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             loadFragment(new HomeFragment(), false);
         }
+
+        Toast.makeText(this, "CineFAST", Toast.LENGTH_SHORT).show();
     }
 
     public void loadFragment(Fragment fragment, boolean addToBackStack) {
